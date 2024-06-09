@@ -1,6 +1,6 @@
 --  ------------- Aggregate Functions ------------- 
 -- aggregate functions work on numbers
--- Count - count the number of rows in a column
+-- Count - The `COUNT` function returns the number of rows that match a specified condition.
 -- sum - calculate total sum of a numeric column
 -- Avg - calculate avg 
 -- Min - find min val in a col
