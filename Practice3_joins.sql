@@ -1,38 +1,42 @@
 
--- primary keys - A primary key is a column (or a set of columns) in a table that uniquely identifies each row in that table. 
--- 				- Uniqueness , Non-null,  Immutable
--- foreign key -  is a column (or a set of columns) in a table that establishes a link between the data in two tables. 
--- 				  It acts as a reference to the primary key in another table (or the same table). 
--- 				- Referential Integrity , Relationships
+/*
+primary keys - A primary key is a column (or a set of columns) in a table that uniquely identifies each row in that table. 
+				- Uniqueness , Non-null,  Immutable
+foreign key -  is a column (or a set of columns) in a table that establishes a link between the data in two tables. 
+				  It acts as a reference to the primary key in another table (or the same table). 
+				- Referential Integrity , Relationships
 
 
--- joins ==> are used to combine data from multiple tables and output them
 
--- ------------ types of joins ------------
--- inner join - An INNER JOIN returns records that have matching values in both tables
+JOINS ==> are used to combine data from multiple tables and output them
 
--- LEFT JOIN (or LEFT OUTER JOIN) - A LEFT JOIN returns all records from the left table (table1) and the matched records from the right table (table2).
---   If there is no match, the result is NULL on the side of the right table.
+------------ types of joins ------------
+inner join - An INNER JOIN returns records that have matching values in both tables
 
---  RIGHT JOIN (or RIGHT OUTER JOIN)
--- A RIGHT JOIN returns all records from the right table (table2) and the matched records from the left table (table1).
---  If there is no match, the result is NULL on the side of the left table.
---  
---  FULL JOIN (or FULL OUTER JOIN)
--- A FULL JOIN returns all records when there is a match in either left (table1) or right (table2) table records. 
--- It returns NULL for records in the left table that do not have a match in the right table and vice versa.
+LEFT JOIN (or LEFT OUTER JOIN) - A LEFT JOIN returns all records from the left table (table1) and the matched records from the right table (table2).
+  If there is no match, the result is NULL on the side of the right table.
 
--- CROSS JOIN
--- A CROSS JOIN returns the Cartesian product of the two tables, meaning it returns all possible combinations of rows from the tables.
---  It does not require a ON clause.
---  
---  SELF JOIN
--- A SELF JOIN is a regular join, but the table is joined with itself. It can be useful for querying hierarchical data or 
--- comparing rows within the same table.
+ RIGHT JOIN (or RIGHT OUTER JOIN)
+A RIGHT JOIN returns all records from the right table (table2) and the matched records from the left table (table1).
+ If there is no match, the result is NULL on the side of the left table.
+ 
+ FULL JOIN (or FULL OUTER JOIN)
+A FULL JOIN returns all records when there is a match in either left (table1) or right (table2) table records. 
+It returns NULL for records in the left table that do not have a match in the right table and vice versa.
 
--- NATURAL JOIN
--- A NATURAL JOIN automatically joins tables based on columns with the same name and data 
--- type in both tables. It doesn't require an ON clause.
+CROSS JOIN
+A CROSS JOIN returns the Cartesian product of the two tables, meaning it returns all possible combinations of rows from the tables.
+ It does not require a ON clause.
+ 
+ SELF JOIN
+A SELF JOIN is a regular join, but the table is joined with itself. It can be useful for querying hierarchical data or 
+comparing rows within the same table.
+
+NATURAL JOIN
+A NATURAL JOIN automatically joins tables based on columns with the same name and data 
+type in both tables. It doesn't require an ON clause.
+
+*/
 
 
 -- create database Practice2_joins;
